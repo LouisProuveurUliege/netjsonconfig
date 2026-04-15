@@ -4,6 +4,7 @@ from .backends.openwrt.openwrt import OpenWrt  # noqa
 from .backends.vxlan.vxlan_wireguard import VxlanWireguard  # noqa
 from .backends.wireguard.wireguard import Wireguard  # noqa
 from .backends.zerotier.zerotier import ZeroTier  # noqa
+from .backends.unifi.unifi import Unifi
 from .version import VERSION, __version__, get_version  # noqa
 
 
@@ -15,5 +16,6 @@ def get_backends():
         "wireguard": Wireguard,
         "vxlan": VxlanWireguard,
         "zerotier": ZeroTier,
+        "unifi": Unifi,
     }
     return default
