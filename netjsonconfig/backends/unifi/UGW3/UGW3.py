@@ -5,7 +5,7 @@ from netjsonconfig.backends.base.parser import BaseParser
 from netjsonconfig.schema import schema as default_schema
 
 
-class Unifi(BaseBackend):
+class UGW3(BaseBackend):
     schema = default_schema
     converters = []
     parser = BaseParser
